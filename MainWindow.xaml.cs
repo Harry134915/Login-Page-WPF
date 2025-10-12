@@ -55,6 +55,9 @@ namespace Login_Pape
             txtEmail.Focus();
         }
 
-        
+        private void MinimizeButton_MouseUp(object sender, MouseButtonEventArgs e)
+        {
+            this.WindowState = WindowState.Minimized;
+        }
     }
 }
