@@ -9,6 +9,7 @@
 
   <ItemGroup>
     <None Remove="Images\close.png" />
+    <None Remove="Images\close1.jpg" />
     <None Remove="Images\Email.png" />
     <None Remove="Images\facebook.png" />
     <None Remove="Images\google.png" />
@@ -19,6 +20,9 @@
 
   <ItemGroup>
     <Resource Include="Images\close.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\close1.jpg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Images\Email.png">
