@@ -60,13 +60,13 @@
                 <TextBlock Text="登        录" Foreground="#3AB19B" Style="{StaticResource TitleText}" />
                 <StackPanel Orientation="Horizontal" Margin="0 20" HorizontalAlignment="Center">
                     <Button Style="{StaticResource buttonCircle}">
+                        <Image Source="/Images/qq.png" Width="20" Height="20" />
+                    </Button>
+                    <Button Style="{StaticResource buttonCircle}">
+                        <Image Source="/Images/wechat.png" Width="20" Height="20" />
+                    </Button>
+                    <Button Style="{StaticResource buttonCircle}">
                         <Image Source="/Images/google.png" Width="20" Height="20" />
-                    </Button>
-                    <Button Style="{StaticResource buttonCircle}">
-                        <Image Source="/Images/facebook.png" Width="20" Height="20" />
-                    </Button>
-                    <Button Style="{StaticResource buttonCircle}">
-                        <Image Source="/Images/linkedin.png" Width="20" Height="20" />
                     </Button>
                 </StackPanel>
 

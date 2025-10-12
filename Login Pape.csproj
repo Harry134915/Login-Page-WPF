@@ -16,6 +16,8 @@
     <None Remove="Images\linkedin.png" />
     <None Remove="Images\Lock.png" />
     <None Remove="Images\minimize1.jpg" />
+    <None Remove="Images\qq.png" />
+    <None Remove="Images\wechat.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -41,6 +43,12 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Images\minimize1.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\qq.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\wechat.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
   </ItemGroup>
