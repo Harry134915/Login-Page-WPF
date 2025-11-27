@@ -31,7 +31,7 @@
                MouseUp="MinimizeButton_MouseUp"
                Panel.ZIndex="1" />-->
 
-        <Border CornerRadius="10 0 0 10">
+        <Border CornerRadius="10 0 0 10" MouseDown="Border_MouseDown">
             <Border.Background>
                 <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
                     <GradientStop Color="#3AA9AD" Offset="0" />
@@ -55,7 +55,7 @@
             </Grid>
         </Border>
 
-        <Border Background="#FFFFFF" Grid.Column="1" CornerRadius="0 10 10 0" MouseDown="Border_MouseDown">
+        <Border Background="#FFFFFF" Grid.Column="1"  CornerRadius="0 10 10 0" MouseDown="Border_MouseDown">
             <StackPanel VerticalAlignment="Center">
                 <TextBlock Text="登        录" Foreground="#3AB19B" Style="{StaticResource TitleText}" />
                 <StackPanel Orientation="Horizontal" Margin="0 20" HorizontalAlignment="Center">
