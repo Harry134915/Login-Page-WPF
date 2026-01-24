@@ -114,7 +114,7 @@
                         <Image Source="/Images/Email.png" Height="20"/>
 
                         <Grid Grid.Column="1" Margin="8,0,0,0">
-                            <TextBlock Text="Email"
+                            <TextBlock Text=" Email"
                        Style="{StaticResource textHint}"
                        IsHitTestVisible="False"
                        VerticalAlignment="Center"
@@ -140,7 +140,7 @@
                         <Image Source="/Images/Lock.png" Height="20"/>
 
                         <Grid Grid.Column="1" Margin="8,0,0,0">
-                            <TextBlock Text="Password"
+                            <TextBlock Text=" Password"
                                        Style="{StaticResource textHint}"
                                        IsHitTestVisible="False"
                                        VerticalAlignment="Center"
