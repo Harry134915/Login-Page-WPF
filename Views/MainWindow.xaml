@@ -5,6 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:vm="clr-namespace:Login_Pape.ViewModels"
         xmlns:helper="clr-namespace:Login_Pape.Helpers"
+        xmlns:converters="clr-namespace:Login_Pape.Converters"
         xmlns:sys="clr-namespace:System;assembly=mscorlib"
         mc:Ignorable="d"
         WindowStartupLocation="CenterScreen"
@@ -18,6 +19,17 @@
     <Window.DataContext>
         <vm:MainViewModel/>
     </Window.DataContext>
+
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/Styles/MainwindowStyle.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+
+            <converters:EmptyToVisibilityConverter x:Key="EmptyToVisibilityConverter"/>
+        </ResourceDictionary>
+    </Window.Resources>
+
 
     <Grid Background="Transparent" MouseLeftButtonDown="Window_MouseLeftButtonDown">
         <Grid.ColumnDefinitions>
@@ -37,8 +49,10 @@
         <Button Grid.Column="1"
                 Panel.ZIndex="1"
                 Command="{Binding MinimizeCommand}"
-                Style="{StaticResource imgMinimize}">
-            <Image Source="/Images/minimize1.jpg"/>
+                Style="{StaticResource imgMinimize}" 
+                BorderThickness="0" 
+                BorderBrush="Transparent">
+            <Image  Source="/Images/minimize1.jpg"/>
         </Button>
 
         <!-- 左侧 -->
