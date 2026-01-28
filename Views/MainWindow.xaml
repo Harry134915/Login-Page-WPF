@@ -136,6 +136,31 @@
                             <TextBox Text="{Binding Email, UpdateSourceTrigger=PropertyChanged}" 
                      Style="{StaticResource textBox}"
                      helper:FocusHelper.IsFocused="{Binding IsEmailFocused}"/>
+                            <!--单值转换器-->
+
+                            <!--<Grid Grid.Column="1" Margin="8,0,0,0">
+                                -->
+                            <!-- 提示文字 -->
+                            <!--
+                                <TextBlock Text="Email"
+                                   Style="{StaticResource textHint}"
+                                   IsHitTestVisible="False"
+                                   VerticalAlignment="Center">
+                                    <TextBlock.Visibility>
+                                        <MultiBinding Converter="{StaticResource MultiValueConverter}">
+                                            <Binding Path="Email"/>
+                                            <Binding Path="IsEmailFocused"/>
+                                        </MultiBinding>
+                                    </TextBlock.Visibility>
+                                </TextBlock>
+
+                                -->
+                            <!-- 输入框 -->
+                            <!--
+                                <TextBox Text="{Binding Email, UpdateSourceTrigger=PropertyChanged}" 
+                                    Style="{StaticResource textBox}"
+                                    helper:FocusHelper.IsFocused="{Binding IsEmailFocused}"/>
+                            </Grid>-->
                         </Grid>
                     </Grid>
                 </Border>
@@ -164,6 +189,24 @@
                             <PasswordBox Style="{StaticResource textBox}"
                                          helper:PasswordBoxHelper.BoundPassword="{Binding Password, Mode=TwoWay}" 
                                          helper:FocusHelper.IsFocused="{Binding IsPasswordFocused}"/>
+                            <!--<Grid Grid.Column="1" Margin="8,0,0,0">
+                                <TextBlock Text=" Password"
+                               Style="{StaticResource textHint}"
+                               IsHitTestVisible="False"
+                               VerticalAlignment="Center">
+                                    <TextBlock.Visibility>
+                                        <MultiBinding Converter="{StaticResource MultiValueConverter}">
+                                            <Binding Path="Password"/>
+                                            <Binding Path="IsPasswordFocused"/>
+                                        </MultiBinding>
+                                    </TextBlock.Visibility>
+                                </TextBlock>
+
+                                <PasswordBox Style="{StaticResource textBox}"
+                                helper:PasswordBoxHelper.BoundPassword="{Binding Password, Mode=TwoWay}" 
+                                helper:FocusHelper.IsFocused="{Binding IsPasswordFocused}"/>
+
+                            </Grid>-->
                         </Grid>
                     </Grid>
                 </Border>
