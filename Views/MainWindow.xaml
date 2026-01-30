@@ -42,18 +42,18 @@
                 Panel.ZIndex="1"
                 Command="{Binding CloseCommand}"
                 Style="{StaticResource imgClose}">
-            <Image Source="/Images/close1.jpg"/>
+            <Image Source="/Images/close.png"/>
         </Button>
 
         <!-- 最小化 -->
-        <Button Grid.Column="1"
+        <!--<Button Grid.Column="1"
                 Panel.ZIndex="1"
                 Command="{Binding MinimizeCommand}"
                 Style="{StaticResource imgMinimize}" 
                 BorderThickness="0" 
                 BorderBrush="Transparent">
             <Image  Source="/Images/minimize1.jpg"/>
-        </Button>
+        </Button>-->
 
         <!-- 左侧 -->
         <Border CornerRadius="10 0 0 10">
